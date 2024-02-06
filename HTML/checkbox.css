@@ -27,7 +27,7 @@
 }
 /* On mouse-over, add a grey background color */
 .chkbox-lbl:hover input ~ .custom-chkbox{
-    background-color: grey;
+    background-color: transparent;
 }
 /* When the checkbox is checked, add a blue background */
 .chkbox-lbl input:checked ~ .custom-chkbox{
