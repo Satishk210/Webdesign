@@ -3,13 +3,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight:normal;
   margin: 0;
-
+  
 }
 
 #amz-logo {
   margin: 0;
   background-color: #232f3e;
   padding: 15px 15px 5px;
+position: relative;
+}
+.logo-cls{
+  margin: 0;
+  position: relative;
+
 }
 
 .main-div {
