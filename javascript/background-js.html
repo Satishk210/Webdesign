@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+<style>
+    #main-div{
+        width:300px;
+        height:300px;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+    <div id="main-div">
+    </div>
+<button onclick="ChangeColor('red')">red</button>
+<button onclick="ChangeColor('blue')">blue</button>
+<button onclick="ChangeColor('green')">green</button>
+<button onclick="ChangeColor('orange')">orange</button>
+</body>
+<script>
+function ChangeColor(val){
+    document.getElementById('main-div').style.backgroundColor=val;
+}
+
+</script>
+</html>
