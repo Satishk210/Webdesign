@@ -1,0 +1,67 @@
+<!-- <h1 id="hel">Hello World</h1>
+<button onclick="change()">Change</button>
+<script>
+    var txt = document.getElementById("hel");
+  
+    function change(){
+        txt.textContent="Bye World";
+    }
+</script> -->
+
+<!-- <input id="num1" />
+<input  id="num2" />
+<button onclick="addfuction()">Add</button>
+<p id = "result">Result is :</p>
+
+
+<script>   
+
+        function addfuction(){
+            var box1= document.getElementById("num1")
+        var box2= document.getElementById("num2")
+        var result = document.getElementById("result")
+      
+        var boxvalue1 = Number(box1.value);
+        var boxvalue2 = Number(box2.value);
+
+        var total = boxvalue1 + boxvalue2;
+            result.textContent="Result is :" + total
+
+      }
+</script> -->
+
+<h1>Guess the number</h1>
+<input type="number" id="num" />
+<button onclick="chk()">Check</button>
+<p id="Result">Your ar wrong/Right</p>
+<p id="score">Score:10</p>
+
+<script>
+  
+
+var guessnumber = document.getElementById("num");
+
+var result = document.getElementById("Result");
+
+var randNum = Math.floor(Math.random()*10)+1
+var sc=document.getElementById("score");
+var Totalscore=10;
+
+function chk(){
+    var enternumber =guessnumber.value;
+    if(enternumber==randNum){
+        result.textContent="You are right"
+        alert("YOU WON THE GAME")
+    }
+    else{
+        Totalscore=Totalscore-1;
+        sc.textContent="Score:"+Totalscore
+        result.textContent="You are Wrong"
+    }
+
+}
+
+
+
+</script>
+
