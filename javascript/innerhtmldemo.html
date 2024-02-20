@@ -1,0 +1,13 @@
+<div id="one">
+    <h1>
+        Hello
+    </h1>
+</div>
+<script>
+    var divtxt=document.getElementById("one");
+   console.log(divtxt.textContent);
+    console.log(divtxt.innerHTML);
+    divtxt.innerHTML="bye";
+    divtxt.innerHTML="<h1>bye</h1>";//access as with tag
+    divtxt.textContent="<h1>bye</h1>";// access as only text
+</script>
