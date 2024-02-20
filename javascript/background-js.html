@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background</title>
 <style>
-    #main-div{
+    div{
         width:300px;
         height:300px;
         border:1px solid black;
+    }
+    .widthcls{
+        width:900px;
+       border: 2px solid greenyellow;
+    box-shadow: 5px 3px 5px 3px black;
+      transition: 2s; 
     }
 </style>
 </head>
 <body>
     <div id="main-div">
     </div>
-<button onclick="ChangeColor('red')">red</button>
+<button onclick="ChangeColor('Red')">Red</button>
 <button onclick="ChangeColor('blue')">blue</button>
 <button onclick="ChangeColor('green')">green</button>
 <button onclick="ChangeColor('orange')">orange</button>
 </body>
 <script>
+    var box =document.getElementById("main-div");
 function ChangeColor(val){
-    document.getElementById('main-div').style.backgroundColor=val;
+     box.style.backgroundColor=val;
+    box.setAttribute("class","widthcls") ;
+
 }
 
 </script>

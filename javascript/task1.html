@@ -1,0 +1,12 @@
+<input type="text" id="inpt" onkeyup="gettext()">
+<h1 id="texttag"></h1>
+<script>
+var box = document.getElementById("inpt");
+var txt=document.getElementById("texttag");
+var result;
+function gettext(){
+result=box.value;
+txt.textContent=result;
+}
+
+</script>
