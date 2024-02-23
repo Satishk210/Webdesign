@@ -1,0 +1,140 @@
+
+body{
+ 
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.FirstMain-div{
+    padding: 30px;
+ 
+    width:400px;
+}
+.Main-div{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subdiv{
+ display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   width:300px;
+   align-items: center;
+
+}
+.form-div{
+    display: flex;
+    flex-wrap: wrap;
+   
+    border: 1px solid gray;
+    padding: 2px;
+}
+.lbl_inpt_div{
+    display: flex;
+    flex-wrap: wrap;
+  width:100%;
+  margin: 0px;
+  border: 0px;
+
+ }
+.lbl-div{
+    font-weight: bold;
+    border: 1px solid gray;
+    box-shadow: 1px 1px #CCC;
+    margin:1px;
+    border-radius: 0px 2px 2px 0px;
+width: 25%;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.inpt-div{
+    border:1px solid #CCC;
+ padding: 1px;
+ border-radius: 2px 0px 0px 2px;
+ width: 72.1%;
+display: flex;
+flex-wrap: wrap;
+
+}
+.lbl-cls{
+    padding: 2px;
+    width: 100%;
+    text-align: center; 
+}
+.inpt-cls{
+    width: 100%;
+}
+.btn-div{
+    width: 100%; 
+    border:1px solid #CCC;
+    padding: 2px;
+}
+
+.btn-cls{
+    width: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+/* result div  */
+
+.result-main-div{
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid #CCC;
+
+}
+.resultSub-main-div{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+width: 100%;
+ 
+}
+.Name-div{
+    /* border: 1px solid gray; */
+    font-weight: bold;
+    /* box-shadow: 1px 1px #CCC; */
+    margin:1px;
+    border-radius: 0px 2px 2px 0px;
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+.result-lbl{
+    border: 1px solid gray;
+    border-radius: 0px 2px 2px 0px;
+    margin: 0;
+padding: 2px;
+width:15.36%;
+display: flex;
+    flex-wrap: wrap;
+}
+.btn{
+
+    background-color:red;
+}
+.resultsubsub-main-div{
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+width: 100%;
+}
+ .result-lbl1{
+    border: 1px solid gray;
+    border-radius: 0px 2px 2px 0px;
+    margin: 0;
+width:15.36%;
+
+}
+

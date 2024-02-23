@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link href="/webdesign/JS_Project/student_form/Styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="FirstMain-div">
+        <div class="Main-div">
+            <div class="subdiv">
+                <h1>STUDENT FORM</h1>
+                <div class="form-div">
+                    <div class="lbl_inpt_div">
+                        <div class="lbl-div">
+                            <label class="lbl-cls">Name</label>
+                        </div>
+                        <div class="inpt-div">
+                            <input type="text" class="inpt-cls" id="inpt_name">
+                        </div>
+                    </div>
+                    <div class="lbl_inpt_div">
+                        <div class="lbl-div">
+                            <label class="lbl-cls">Age</label>
+                        </div>
+                        <div class="inpt-div">
+                            <input type="number" class="inpt-cls" id="inpt_Age">
+                        </div>
+                    </div>
+                    <div class="lbl_inpt_div">
+                        <div class="lbl-div">
+                            <label class="lbl-cls">Gender</label>
+                        </div>
+                        <div class="inpt-div">
+                            <label>
+                                <input type="radio" name="Gender" id="inpt_Male" value="Male">Male
+                            </label>
+                            <label>
+                                <input type="radio" name="Gender" id="inpt_FeMale" value="FeMale">Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class="lbl_inpt_div">
+                        <div class="lbl-div">
+                            <label class="lbl-cls">Course</label>
+                        </div>
+                        <div class="inpt-div">
+                            <select class="inpt-cls" id="#select">
+                                <option>Select</option>
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="lbl_inpt_div">
+                        <div class="lbl-div">
+                            <label class="lbl-cls">E-mail</label>
+                        </div>
+                        <div class="inpt-div">
+                            <input type="email" class="inpt-cls" id="inpt_Email">
+                        </div>
+                    </div>
+                    <div class="lbl_inpt_div">
+                        <div class="btn-div">
+                            <button class="btn-cls" onclick="updateForm()">Save</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="result-main-div">
+            <div class="resultSub-main-div">
+
+                <label class="result-lbl">Name</label>
+
+                <label class="result-lbl">Age</label>
+
+                <label class="result-lbl">Gender</label>
+
+                <label class="result-lbl">Course </label>
+                <label class="result-lbl">Email </label>
+                <label class="result-lbl">Action</label>
+            </div>
+
+            <div class="resultsubsub-main-div" id="div-cont">
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="/webdesign/JS_Project/student_form/std-js.js"></script>
+
+</html>
