@@ -1,0 +1,59 @@
+<!-- <style>
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.popupbox{
+    position:absolute;
+    z-index: 3;
+    background-color: white;
+    color:black;
+    width:40%;
+    padding:20px;
+    border-radius: 10px;
+    left:30%;
+    display: none;
+
+}
+</style>
+
+<button onclick="display()">Show</button>
+<div class="overlay">
+
+</div>
+<div class="popupbox">
+<p>Lorem ipsum dolor sit met consectetur adipisicing elit.</p>
+<button onclick="closepopup()">Close</button>
+
+</div>
+
+<script>
+var popoverlay=document.querySelector(".overlay")
+var popupbox_show =document.querySelector(".popupbox")
+function display(){
+    popupbox_show.style.display="block"
+    popoverlay.style.display="block"
+}
+
+function closepopup(){
+    popupbox_show.style.display="none"
+    popoverlay.style.display="none"
+}
+
+</script> -->
+<button id="btn">Show</button>
+<script>
+var button_add = document.getElementById("btn")
+
+button_add.addEventListener("click",function(){
+    alert("hello")
+})
+
+</script>
