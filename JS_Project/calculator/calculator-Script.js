@@ -1,5 +1,6 @@
 function displayvalue(val){
-    document.getElementById("display").value = document.getElementById("display").value + val;
+    var displayval=document.getElementById("display");
+    displayval.value=displayval.value + val;
 
 }
 function clearDisplay(){

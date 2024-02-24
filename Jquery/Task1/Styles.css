@@ -1,0 +1,10 @@
+.box{
+    width: 500px;
+    height:500px;
+    border: 1px solid black;
+    background-color: aqua;
+}
+.Erroemsg{
+    display: none;
+    color:red
+}
