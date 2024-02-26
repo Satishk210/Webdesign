@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Element Selector</title>
+<link href="style_not.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h4 title='title' data='data'>Hai how are you</h4>
+<button id='btn_title'>Get Title</button>
+<button id='btn_data'>Set Data</button>
+<button id='remove'>Remove Data</button>
+
+
+</body>
+<script src="F:\STK_FOLDER\webdesign\Jquery\JS\jquery.js"></script>
+<script>
+$(document).ready(function(){
+/* $('#btn_title').click(function(){
+console.log($('h4').attr('title'))
+});
+$('#btn_data').click(function(){
+$('h4').attr({
+	"title": "this is title"
+})
+}) */
+$('#remove').click(function(){
+$('h4').removeAttr('title')
+})
+})
+</script>
+
+</html>

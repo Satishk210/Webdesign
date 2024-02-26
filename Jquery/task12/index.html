@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Element Selector</title>
+<link href="style_not.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="a">
+	sa
+	</div>
+	<!-- <p>Hai hello</p> -->
+<button id='showbtn'>Show</button>
+<button id='hidebtn'>Hide</button>
+
+
+</body>
+<script src="F:\STK_FOLDER\webdesign\Jquery\JS\jquery.js"></script>
+<script>
+$(document).ready(function(){
+	
+/* $('#showbtn').click(function(){ 
+$('p').addClass('a')
+}); 
+
+$('#hidebtn').click(function(){
+$('p').removeClass('a')
+}) */
+
+$('#showbtn').click(function(){
+$('.a').css({"border":"0.8px solid red",
+			"box-shadow":"1px 1px red",})
+})
+
+
+
+})
+</script>
+
+</html>
