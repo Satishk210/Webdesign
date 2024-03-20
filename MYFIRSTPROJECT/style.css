@@ -1,0 +1,13 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.banner{
+    background-image: url(/webdesign/MYFIRSTPROJECT/Images/Background-images1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+
+}
+.padding-skills{
+padding: 4rem 0;
+}
