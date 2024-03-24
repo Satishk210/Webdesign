@@ -1,4 +1,5 @@
 $padding:5px;
+$margin: 5px;
 
 $utilities:(
     "padding":(
@@ -46,15 +47,65 @@ $utilities:(
             "3":$padding * 6,
         ),
     ),
+    "margin":(
+        "prefix":"m",
+        "values":(
+            "0":0,
+            "1":$margin * 2,
+            "2":$margin * 4,
+            "3":$margin * 6,
+        ),
+    ),
+    "margin-left":(
+        "prefix":"ml",
+        "values":(
+            "0":0,
+            "1":$margin * 2,
+            "2":$margin * 4,
+            "3":$margin * 6,
+        ),
+    ),
+    "margin-right":(
+        "prefix":"mr",
+        "values":(
+            "0":0,
+            "1":$margin * 2,
+            "2":$margin * 4,
+            "3":$margin * 6,
+        ),
+    ),
+    "margin-top":(
+        "prefix":"mt",
+        "values":(
+            "0":0,
+            "1":$margin * 2,
+            "2":$margin * 4,
+            "3":$margin * 6,
+        ),
+    ),
+    "margin-bottom":(
+        "prefix":"mb",
+        "values":(
+            "0":0,
+            "1":$margin * 2,
+            "2":$margin * 4,
+            "3":$margin * 6,
+        ),
+    ),
 
 );
-
 @each $property,$map in $utilities{
     $prefix:map-get($map,"prefix");
     $values:map-get($map,"values");
     @each $key,$val in $values{
         .#{$prefix}-#{$key}{
-            #{$property}-#{$key}:$val;
+            #{$property}:$val;
         }
+
     }
-} 
+}
+
+
+
+
+

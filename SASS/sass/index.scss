@@ -84,6 +84,17 @@ width:$width;
     font-style: italic;
     text-align: justify;
 }
-@import 'utilities'
+@import 'utilities';
+
+// %extend-border{
+//     border:1px solid #ccc;
+//     padding :10px;
+//     color:#333;
+//     font-size:1em;
+
+// }
+// .border{
+//     @extend %extend-border;
+// }
 
 
