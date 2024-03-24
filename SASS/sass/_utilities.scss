@@ -1,0 +1,60 @@
+$padding:5px;
+
+$utilities:(
+    "padding":(
+        "prefix":"p",
+        "values":(
+            "0":0,
+            "1":$padding * 2,
+            "2":$padding * 4,
+            "3":$padding * 6,
+        ),
+    ),
+    "padding-left":(
+        "prefix":"pl",
+        "values":(
+            "0":0,
+            "1":$padding * 2,
+            "2":$padding * 4,
+            "3":$padding * 6,
+        ),
+    ),
+    "padding-right":(
+        "prefix":"pr",
+        "values":(
+            "0":0,
+            "1":$padding * 2,
+            "2":$padding * 4,
+            "3":$padding * 6,
+        ),
+    ),
+    "padding-top":(
+        "prefix":"pt",
+        "values":(
+            "0":0,
+            "1":$padding * 2,
+            "2":$padding * 4,
+            "3":$padding * 6,
+        ),
+    ),
+    "padding-bottom":(
+        "prefix":"pb",
+        "values":(
+            "0":0,
+            "1":$padding * 2,
+            "2":$padding * 4,
+            "3":$padding * 6,
+        ),
+    ),
+
+);
+
+@each $property,$map in $utilities{
+    $prefix:map-get($map,"prefix");
+    $values:map-get($map,"values");
+    @each $key,$val in $values{
+        .#{$prefix}-#{$key}{
+            #{$property}-#{$key}:$val;
+        }
+    }
+} 

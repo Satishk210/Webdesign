@@ -1,0 +1,89 @@
+@import 'variable';
+body{
+    font-family:$font-family;
+    font-size: $base-font-size;
+}
+
+h2 {
+    color: $primary-color;
+}
+@import 'button';
+@import 'color';
+
+nav{
+    background-color: black;
+    padding:10px;
+
+    a{
+        text-decoration: none;
+        display:inline-block;
+        padding: 5px 10px;
+        color: white;
+        &:last-child{
+            color:red;
+        }
+        &:nth-child(2){
+            color:red;
+        }
+        &:hover{
+            color:greenyellow;
+        }
+
+    }
+}
+p {
+    line-height: 30px;
+    text-indent: 30px;
+ font-size: $font-size-md;
+    a{
+        text-decoration: none;
+        color:map-get($colors,"success");
+    }
+
+}
+
+$bg-color:#222;
+$text-color:#222;
+$height:300px;
+$width:300px;
+.box-if{
+background-color: $bg-color;
+padding:10px;
+height: $height;
+width:$width;
+@if($bg-color==$text-color){
+    color:white;
+}
+@else{
+    color:greenyellow;
+}
+@if($width>=300px and $height>=300px){
+    background-color: brown;
+}
+@else{
+    background-color: aqua;
+}
+
+}
+@function px_to_rem($px){
+    @return calc($px/16)+ rem;
+}
+
+@mixin text-style{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: px_to_rem(18);
+    line-height: 1.5;
+}
+.title{
+    @include text-style;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.para{
+    @include text-style;
+    font-style: italic;
+    text-align: justify;
+}
+@import 'utilities'
+
+
